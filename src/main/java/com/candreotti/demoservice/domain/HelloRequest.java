@@ -20,4 +20,8 @@ public class HelloRequest {
     @NotNull
     @NotEmpty
     private int age;
+
+    @NotNull
+    @NotEmpty
+    private String password;
 }

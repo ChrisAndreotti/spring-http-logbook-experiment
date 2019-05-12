@@ -22,11 +22,15 @@ public class DemoController {
 
     @GetMapping
     @ApiOperation("Get HelloResponse")
-    public ResponseEntity<HelloResponseDto> helloGet(@RequestParam String name, @RequestParam int age) {
+    public ResponseEntity<HelloResponseDto> helloGet(
+            @RequestParam String name,
+            @RequestParam int age,
+            @RequestParam String password) {
         HelloResponseDto helloResponse = helloService.greeting(
                 HelloRequest.builder()
                         .name(name)
                         .age(age)
+                        .password(password)
                         .build());
 
         return ResponseEntity.ok()

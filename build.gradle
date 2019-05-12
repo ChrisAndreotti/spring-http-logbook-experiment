@@ -29,6 +29,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('io.springfox:springfox-swagger-ui:2.9.2')
     implementation('io.springfox:springfox-swagger2:2.9.2')
+    implementation('org.zalando:logbook-spring-boot-starter:1.13.0')
     compileOnly('org.projectlombok:lombok:1.18.6')
     annotationProcessor('org.projectlombok:lombok:1.18.6')
 }
